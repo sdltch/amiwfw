@@ -56,16 +56,19 @@ public class Report {
         if(mySystem.contains("Windows")){
             reportFileName = "reportamirobot.html";
             myreport = "\\report\\";
-            ROOT_DIR = "D:\\testdata\\github\\amisroboyxt\\amisrobot";
+            ROOT_DIR = "D:\\testdata\\gitami\\amiwfw\\amisroboyxt\\amisrobot";
+            //ROOT_DIR = "D:\\testdata\\github\\amisroboyxt\\amisrobot";
 //            System.getProperty("user.dir"):当前路径
 //            ROOT_DIR = System.getProperty("user.dir")+"\\amirobt";
             System.out.println("当前路径:"+ROOT_DIR+" 系统操作");
             System.out.println("当前在121:"+mySystem+" 系统操作");
             //源文件路径
-            File startFile=new File("D:\\testdata\\github\\amisroboyxt\\amisrobot\\report\\reportamirobot.html");
-
+            File startFile=new File("D:\\testdata\\gitami\\amiwfw\\amisroboyxt\\amisrobot\\report\\reportamirobot.html");
+            //File startFile=new File("D:\\testdata\\github\\amisroboyxt\\amisrobot\\report\\reportamirobot.html");
             //目的目录路径
-            File endDirection=new File("D:\\testdata\\github\\amisroboyxt\\amisrobot\\report\\reporthistory");
+            File endDirection=new File("D:\\testdata\\gitami\\amiwfw\\amisroboyxt\\amisrobot\\report\\reporthistory");
+            //File endDirection=new File("D:\\testdata\\github\\amisroboyxt\\amisrobot\\report\\reporthistory");
+
             //如果目的目录路径不存在，则进行创建
                 if(!endDirection.exists()) {
                     endDirection.mkdirs();
@@ -86,7 +89,8 @@ public class Report {
             }
             System.out.println("!!!!!!!!!!!用户的当前工作目录:"+System.getProperty("user.dir"));
             //改名
-            String copyone = "D:\\testdata\\github\\amisroboyxt\\amisrobot\\report\\reporthistory\\reportamirobot.html";
+            String copyone = "D:\\testdata\\gitami\\amiwfw\\amisroboyxt\\amisrobot\\report\\reporthistory\\reportamirobot.html";
+            //String copyone = "D:\\testdata\\github\\amisroboyxt\\amisrobot\\report\\reporthistory\\reportamirobot.html";
             File fileone = new File(copyone);
             //获取当前时间
             SimpleDateFormat formatters = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
